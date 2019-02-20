@@ -1,0 +1,38 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "ProximaNova";
+    src: url(../fonts/Proxima Nova semibold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "ProximaNova";
+    src: url(../fonts/Proxima Nova light.ttf);
+}
+
+@font-face {
+    font-family: "ProximaNova";
+    src: url(../fonts/Proxima Nova bold.otf);
+    font-weight: bold;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    
+    &_position {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        position: relative;
+    }
+}
+
+@import "blocks/header/header.less";
+@import "blocks/shopBrands/shopBrands.less";
+@import "blocks/viewHashtagIcndy/viewhashtagicndy.less";
+@import "blocks/footer/footer.less";

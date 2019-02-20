@@ -1,0 +1,144 @@
+.view-hashtag-icndy {
+    position: relative;
+}
+
+.images {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.image-box_size {
+    width: 355px;
+    height: 355px;
+}
+
+.image-box-1 {
+    background-image: url(../img/accesories.png);
+    background-size: cover;
+}
+
+.image-box-2 {
+    background-image: url(../img/boots.png);
+    background-size: cover;
+}
+
+.image-box-3 {
+    background-image: url(../img/move.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.image-box-4 {
+    background-image: url(../img/wear.png);
+    background-size: cover;
+}
+
+.image-box-5 {
+    background-image: url(../img/style.png);
+    background-size: cover;
+}
+
+.image-box-6 {
+    background-image: url(../img/nike-boots.png);
+    background-size: cover;
+}
+
+.image-box-7 {
+    background-image: url(../img/clothes.png);
+    background-size: cover;
+}
+
+.image-box-8 {
+    background-image: url(../img/boy.png);
+    background-size: cover;
+}
+
+.hashtag-preview {
+    position: absolute;
+    top: 40%;
+    bottom: 50%;
+    text-align: center;
+    z-index: 20;
+    left: 10%;
+}
+
+.heading-view-hashtag {
+    color:  #ffffff;
+    font-size: 60px;
+    font-weight: 300;
+    line-height: 70px;
+    letter-spacing: 20px;
+    margin: 0;
+}
+
+/***********************************
+
+
+    RESPONSIVE VIEWHASHTAGICNDY
+
+***********************************/
+
+@media (min-width: 320px) and (max-width: 1023px) {
+    
+    .image-box_size {
+        width: 100%;
+    }
+    
+    .image-box-5 {
+        display: none;
+    }
+    
+    .image-box-6 {
+        display: none;
+    }
+    
+    .image-box-7 {
+        display: none;
+    }
+    
+    .image-box-8 {
+        display: none;
+    }
+    
+    .hashtag-preview {
+        right: 10%;
+    }
+    
+    .heading-view-hashtag {
+        font-size: 30px;
+        letter-spacing: 10px;
+    }
+    
+    @media(min-width: 650px) {
+        .image-box_size {
+            flex-basis: 50%;
+            height: 325px;
+        }
+        
+        .image-box-5 {
+            display: block;
+        }
+
+        .image-box-6 {
+            display: block;
+        }
+        
+        .heading-view-hashtag {
+            color:  #ffffff;
+            font-size: 60px;
+            font-weight: 300;
+            line-height: 70px;
+            letter-spacing: 20px;
+            margin: 0;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .image-box_size {
+        flex-basis: 25%;
+        height: 300px;
+        background-position: center;
+    }
+}
+

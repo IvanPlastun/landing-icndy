@@ -1,0 +1,119 @@
+.footer {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+.footer_position {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    font-family: ProximaNova, sans-serif;
+    color:  #1a1a1a;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 50px;
+    letter-spacing: 5px
+}
+
+.footer-link {
+    text-decoration: none;
+    color: #1a1a1a;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+.footer-nav {
+    display: flex;
+    list-style: none;
+    
+    &__item {
+        margin-right: 40px;
+    }
+    
+    &__item:last-child {
+        margin-right: 0;
+    }
+}
+
+.social-icon__link {
+    color: #1a1a1a;
+    margin-right: 40px;
+    transition: 0.5s ease-in-out;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -ms-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+}
+
+.instagram:hover {
+    color: #517fa4;
+}
+
+.facebook:hover {
+    color: #3b5998;
+}
+
+.twitter:hover {
+    color: #00aced;
+}
+
+.social-icon__link:last-child {
+    margin-right: 0;
+}
+
+/***********************************
+
+    RESPONSIVE FOOTER
+
+***********************************/
+
+
+
+@media (min-width: 320px) and (max-width: 1099px) {
+    .footer {
+        height: 400px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    .footer_position {
+        flex-direction: column;
+    }
+    
+    .footer-content {
+        display: block;
+        text-align: center;
+    }
+    
+    .footer-nav {
+        flex-flow: row wrap;
+        justify-content: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 0;
+        
+        &__item {
+            margin-right: 6px;
+        }
+    }
+    
+    .social-icon__link {
+        margin-right: 20px;
+        text-align: center;
+    }
+    
+    .social-icon__link:last-child {
+        margin-right: 0;
+    }
+}

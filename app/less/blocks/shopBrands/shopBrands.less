@@ -1,0 +1,317 @@
+.shop-brands {
+    padding-top: 82px;
+    padding-bottom: 82px;
+}
+
+.brand-boxes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.brand-preview {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    padding-left: 53px;
+}
+
+.logo-gourmet {
+    width: 195px;
+    height: 191px;
+}
+
+.logo-carhatt {
+    width: 81px;
+    height: 96px;
+}
+
+.logo-adidas {
+    width: 140px;
+    height: 96px;
+}
+
+.logo-10deep {
+    width: 275px;
+    height: 68px;
+}
+
+.logo-palace {
+    width: 110px;
+    height: 95px;
+}
+
+.logo-nike {
+    width: 183px;
+    height: 97px;
+}
+
+.brand-box-1 {
+    width: 734px;
+    height: 720px;
+    background-image: url(../img/shop-gourmet.png);
+    opacity: .9;
+    background-position: center;
+}
+
+.brand-box-2 {
+    background-image: url(../img/shop-carhatt.png);
+    background-size: cover;
+}
+
+.brand-box-3 {
+    background-image: url(../img/adidas.png);
+    background-position: center;
+     background-size: cover;
+}
+
+.brand-box-column {
+    width: 414px;
+    height: 332px;
+    opacity: .9;
+    margin-bottom: 56px;
+}
+
+
+.heading-type-h2 {
+    font-family: "ProximaNova", sans-serif;
+    font-size: 60px;
+    color: #fff;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 20px;
+    margin: 0;
+    margin-top: 36px;
+    margin-bottom: 60px;
+}
+
+.heading-type-h3 {
+    font-family: "ProximaNova", sans-serif;
+    color:  #ffffff;
+    font-size: 40px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 0;
+    margin-top: 36px;
+    margin-bottom: 40px;
+    letter-spacing: 10px;
+}
+
+
+.brand-box-row {
+    display: flex;
+    justify-content: space-between;
+    
+    &_position {
+        padding-left: 38px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 100%;
+    }
+}
+
+.brand-box_size {
+    height: 580px;
+    opacity: 0.9;
+}
+
+.brand-box-4 {
+    width: 339px;
+    background-image: url(../img/10Deep.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.brand-box-5 {
+    width: 339px;
+    background-image: url(../img/palace.png);
+    background-position: center;
+}
+
+.brand-box-6 {
+    width: 414px;
+    background-image: url(../img/nike.png);
+    background-position: center;
+    background-size: cover;
+}
+
+
+/***********************************
+
+
+    RESPONSIVE SHOPBRANDS
+
+***********************************/
+
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .shop-brands {
+        padding-top: 52px;
+        padding-bottom: 52px;
+    }
+    
+    .brand-boxes {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    
+    .brand-box-1 {
+        width: 100%;
+        height: 332px;
+        background-size: cover;
+        margin-bottom: 30px;
+    }
+    
+    .brand-preview {
+        padding-left: 30px;
+    }
+    
+    .logo-gourmet {
+        width: 120px;
+        height: 110px;
+    }
+    
+    .heading-type-h2 {
+        font-size: 40px;
+        letter-spacing: 11px;
+        margin-bottom: 20px;
+    }
+    
+    .brand-boxes_size {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .brand-box-column {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    
+    .brand-box-row {
+        flex-flow: row wrap;
+    }
+    
+    .brand-box-4 {
+        width: 0;
+        background-position: initial;
+    }
+    
+    .brand-box-5 {
+        width: 0;
+    }
+    
+    .brand-box-6 {
+        width: 0;
+        background-position: initial;
+    }
+    
+    .brand-box_size {
+        width: 100%;
+        height: 332px;
+        margin-bottom: 30px;
+    }
+    
+    .brand-box_size:last-child {
+        margin-bottom: 0;
+    }
+    
+    .brand-box-row_position {
+        padding-left: 30px;
+    }
+    
+    @media (min-width: 650px) {
+        .brand-box-1 {
+            height: 400px;
+        }
+        
+        .brand-box-column {
+            height: 400px;
+        }
+        
+        .brand-box_size {
+            height: 400px;
+        }
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    
+    .container {
+        width: 100%;
+    }
+    
+    .shop-brands {
+        padding-top: 52px;
+        padding-bottom: 52px;
+    }
+    
+    .brand-box-1 {
+        width: 50%;
+        height: 694px;
+        background-size: cover;
+    }
+    
+    .brand-boxes_size {
+        width: 50%;
+        margin-left: 15px;
+    }
+    
+    .brand-preview {
+        padding-left: 30px;
+    }
+    
+    .heading-type-h2 {
+        font-size: 40px;
+        letter-spacing: 20px;
+    }
+    
+    .brand-box-column {
+        width: 100%;
+        height: 332px;
+        margin-bottom: 30px;
+    }
+    
+    .brand-box-row {
+        flex-flow: row wrap;
+    }
+    
+    .brand-box_size {
+        width: 49%;
+        margin-bottom: 30px;
+        margin-right: 15px;
+    }
+    
+    .brand-box_size:nth-child(2) {
+        margin-right: 0;
+    }
+    
+    .brand-box_size:nth-child(3) {
+        margin-right: 0;
+    }
+    
+    .brand-box-6 {
+        width: 100%;
+        background-position: initial;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1240px) {
+    .brand-box-1 {
+        width: 60%;
+    }
+    
+    .brand-boxes_size {
+        width: 39%;
+    }
+    
+    .brand-box-column {
+        width: 100%;
+    }
+    
+    .brand-box_size {
+        width: 33%;
+    }
+}
+
+
